@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    font-size: 20px;
+    color: black;
+}
+.texto-branco{
+    color:#fff;
+}
+p{
+    font-family: serif;
+    color: black
+}
+.link-preto a{
+    text-decoration: none;
+    color: black;
+}
+.negrito{
+    font-weight: bold ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    border-bottom: 2px solid black;
+}
+
+/****************navegacao******************/
+main .index{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/fundo/index.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+}
+.linha{
+    max-width: 1180px;
+    margin: 0 auto;
+    list-style: none;
+}
+.links{
+    float: right;
+    margin-top: 40px;
+    text-align: right;
+}
+.links li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px 0;
+    margin-left: 40px;
+    margin-right: -20px;
+    font-weight: 100px;
+}
+.links li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+.titulo{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frase{
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 240%;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+.borda{
+    border-radius: 200px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.btn-cliente{
+    background-color: transparent;
+    color:  #fff;
+    margin-right: 15px;
+    border: 1px solid  #fff;
+}
+.btn-cliente:hover{
+    background-color: black;
+    border-bottom: 2px solid #bf55ec;
+}
+.mudar-cor{
+    animation: mudarCorEasy 1s infinite;
+}
+@keyframes mudarCorEasy{
+    0%{color: red;}
+    25%{ color: #bf55ec;}
+    50% { color:  aqua}
+    100% { color: #bf55ec;}
+}
+.icone-mobile{ display: none;
+    float: right;
+}
+
+/************principal**************/
+
+main .servicos{
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+main .servicos .servicos-post a{
+    color:white;
+}
+main .servicos .titulo1{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 20px;
+    color: #4e4c4c;
+}
+main .servicos .servicos-post{
+    padding-top: 96px;
+    position: relative;
+    width: 100%;
+    margin-top: -90px;
+}
+main .servicos-post .servicos-img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 240px;
+    height: 420px;
+    margin: 48px 32px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+main .servicos-img .servicos-titulo{
+    padding: 32px 0;
+}
+main .servicos-img .btn-servicos{
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: black;
+    margin: 10px;
+    background: #7C4DFF;
+}
+
+/************** postagem-site *******************/
+
+main .site-conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+main .post-conteudo{
+    margin: 20px;
+    width: 100%;
+
+}
+main .espacamento {
+    padding-top: 16px;
+}
+main .titulo2 a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200 px;
+    text-decoration: none;
+    color: #4e4c4c;
+    padding-left: 20px;
+}
+.post-info{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    padding: 16px;
+    position: absolute;
+    bottom: -187%;
+    left: 11vw;
+    border-radius: 48px;
+    font-size: 15px;
+}
+main .btn-post{
+    background: #7C4DFF;
+}
+main .btn-post a{
+    text-decoration: none;
+    color: white;
+}
+main .lista-categoria  {
+    font-family: serif;
+
+}
+main .categoria li{
+    list-style: none;
+    padding: 10px 20px;
+    margin: 10px;
+    background:  #7C4DFF;
+    border-radius: 50px;
+}
+main .categoria li a{
+    color: white;
+}
+
+
+/**************** slide*****************/
+main .slide{
+    margin-top: 30px;
+}
+main .slide .texto-slide{
+    color: #4e4c4c;
+    margin: 10px;
+    padding: 20px;
+}
+main .slide .texto-slide a{
+    color: #4e4c4c;
+    font-family: sans-serif;
+}
+
+/**************** avaliacao *****************/
+main .avaliacao{
+    margin-top: 50px;
+}
+main .amostra {
+    content: "";
+    clear: both;
+    display: table;
+  }
+main .img-ajuste {
+    float: left;
+    width: 200px;
+    padding: 20px;
+}
+  
+/****************** rodapé***********************/
+main .fundo-rodape-index{
+    background-image: url(../img/fundo/rodape/rodape-fundo-index.jpg);
+    margin-top: 80px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+main .rodape .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+main .rodape .container > div{
+    margin-top: 340px;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 48px , 9rem;
+}
+main .rodape .newsletter > .elemento{
+    background: black;
+    display: inline-block;
+}
+main .rodape .ajuste-rodape{
+    margin-left: 100px;
+    padding-top: 80px;
+}
+main .rodape .newsletter > .elemento input{
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    width: 93%;
+}
+main .rodape .newsletter > .elemento .seta{
+    position: relative;
+    float: right;
+    margin-top: -30px;
+    padding: 3px;
+    background: #7C4DFF;
+    cursor: pointer;
+    width: 13%;
+}
+main .rodape .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+}
+main .rodape .direitos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*********************cadastro-cliente******************/
+
+main .fundo-cliente{
+    background-image:linear-gradient(rgb(0, 0, 0, 0.1),rgb(0, 0, 0, 0.1)), url(../img/fundo/banner-cadastro-cliente.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+}
+main .criar-conta{
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.6);
+    background: transparent;
+    width: 600px;
+}
+main .caixa-esquerda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #aaa;
+}
+main .criar-conta h1{
+    color: #1f1d1d;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+main .criar-conta input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+main .criar-conta input[type="submit"]{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #7C4DFF;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+main .criar-conta input[type="submit"]:hover{
+    background: #bf55ec;
+    transition: 0.2s ease;
+}
+main .caixa-direita{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #aaa;
+} 
+main .ou{
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+}
+main .caixa-direita .entrar-com{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #1f1d1d;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+main .caixa-direita .btn-social{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+main .caixa-direita .twitter{
+    background: #55acee;
+}
+main .caixa-direita .facebook{
+    background: #32508e;
+}
+main .caixa-direita .google{
+    background: #dd4b39;
+}
+main .caixa-direita a{
+    color: #fff;
+    font-size: 15px;
+}
+main .fundo-rodape-cadastro{
+    background-image: url(../img/fundo/rodape/rodape-fundo-cliente.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/*********************cadastro-empresa******************/
+main .fundo-empresa{
+    background-image: url(../img/fundo/banner-cadastro-empresa.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+main .cadastrar-empresa{
+    position: relative;
+    margin-left: 200px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.6);
+    width: 400px;
+}
+main .cadastrar-empresa h1{
+    color: #1f1d1d;
+    margin: 0 0px 20px 20px;
+    padding: 40px 0 20px 20px;
+    font-weight: 300;
+    font-size: 28px;
+}
+main .cadastrar-empresa input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 310px;
+    height: 32px;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+main .cadastrar-empresa input[type="submit"]{
+    margin-bottom: 28px;
+    width: 310px;
+    height: 32px;
+    background: #7C4DFF;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+main .cadastrar-empresa input[type="submit"]:hover{
+    background: #bf55ec;
+    transition: 0.2s ease;
+}
+main .cadastrar-empresa .dados{
+    margin: 40px;
+}
+
+/*************** entrar*************/
+main .fundo-entrar{
+    background-image:linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)), url(../img/fundo/banner-entrar.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+main .entrar{
+    position: relative;
+    margin: 40px auto;
+    height: 500px;
+    background: transparent;
+    width: 800px;
+}
+main .entrar h1{
+    color: #fff;
+    text-align: center;
+    margin: 0 0px 0 20px;
+    padding: 40px 0 20px 20px;
+    font-weight: 300;
+    font-size: 30px;
+}
+main .entrar .entrar-frase{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+main .entrar .entrar-social{
+    display: block;
+    margin-bottom: 10px;
+    color: #4e4c4c;
+    text-align: center;
+}
+main .entrar .btn-entrar{
+    margin-bottom: 20px;
+    width: 270px;
+    height: 36px;
+    border: none;
+    font-size: 20px;
+    border-radius: 200px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+main .entrar .twt{
+    background: #55acee;
+}
+main .entrar .fc{
+    background: #32508e;
+}
+main .entrar .gle{
+    background: #dd4b39;
+}
+main .entrar .ema{
+    background: #be2c19;
+}
+main .caixa-direita a{
+    color: #fff;
+    font-size: 15px;
+}
+
+/*************** design responsivo *************/
+@media only screen and (max-width: 1180px){
+    .titulo{
+        width: 100% ;
+        padding: 0 2% ;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    .frase{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    .frase{font-size: 180%;}
+
+    .links{  display: none;}
+
+    .icone-mobile{ display: inline-block;
+        color: #fff;
+        margin-top: 30px;
+        margin-right: 20px;
+        /*float: right;*/
+    }
+    
+    .links{
+        float: left;
+    }
+
+    .links li{
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .btn-completo{
+        margin-bottom: 20px;
+    }
+    .frase{font-size: 160%;}
+}
+

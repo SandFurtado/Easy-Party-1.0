@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entrar/Criar uma conta</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="fundo-cliente">
+                <nav>
+                    <div class="linha concertar">
+                        <img src="" class="logo" alt="">
+
+                        <ul class="links animate slideInDown link-preto negrito" id="checar-classe">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cadastro-empresa.html"> Cadastre sua empresa</a></li>
+                            <li><a href="entrar.html">Entrar</a></li>
+                        </ul>
+
+                        <li><a href="#" class="icone-mobile" onclick="mostrar()"><i class="fa fa-bars"></i></a></li>
+
+                    </div>
+                </nav>
+
+                <div class="criar-conta">
+                    <div class="caixa-esquerda">
+                        <h1>Cadastre-se</h1>
+                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name=email placeholder="Email">
+                        <input type="password" name="senha" placeholder="Senha">
+                        <input type="password" name="senha2" placeholder="Repetir senha"><br>
+                        <input type="submit" name="btn-cadastrar" placeholder="Cadastre-se">
+                    </div>
+
+                    <div class="caixa-direita">
+                        <span class="entrar-com">Rede social</span><br>
+                        <button class="btn-social facebook">
+                            <a href="#"> <i class="fa fa-facebook-square"></i> Continuar com Facebook</a>
+                        </button>
+
+                        <button class="btn-social google">
+                            <a href="#"> <i class="fa fa-google"></i> Continuar com Google</a>
+                        </button>
+                    </div>
+                    <div class="ou">OU</div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="rodape">
+            <div class="fundo-rodape-cadastro">
+                <div class="container">
+                    <div class="sobre ajuste-rodape">
+                        <h2 class="texto-branco">Sobre</h2>
+                        <p class="texto-branco">A Easy Party é uma empresa que conecta você com os melhores fornecedores
+                            para a sua festa.
+                        </p>
+                    </div>
+                    <div class="newsletter ajuste-rodape">
+                        <h2 class="texto-branco">Newsletter</h2>
+                        <p class="texto-branco">Assine para ficar por dentro das novidades</p>
+                        <div class="elemento">
+                            <input type="text" placeholder="Email">
+                            <div class="seta texto-branco"><i class="fa fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="instagram ajuste-rodape">
+                        <h2 class="texto-branco">Instagram</h2>
+                        <div class="flex-row">
+                            <img src="./img/ig/card1.jpg">
+                            <img src="./img/ig/card2.jpg">
+                            <img src="./img/ig/card9.jpg">
+                        </div>
+                        <div class="flex-row">
+                            <img src="./img/ig/card6.jpg">
+                            <img src="./img/ig/card7.jpg">
+                            <img src="./img/ig/card8.jpg">
+                        </div>
+                    </div>
+                    <div class="seguir ajuste-rodape">
+                        <h2 class="texto-branco">Siga</h2>
+                        <p class="texto-branco">Siga nossas redes sociais</p>
+                        <div class="texto-branco">
+                            <i class="fa fa-facebook-square"></i>
+                            <i class="fa fa-twitter-square"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-tumblr-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="direitos flex-row">
+                    <h4>
+                        Copyright © 2019 Todos os direitos reservaados | feito por
+                        <a href="https://github.com/SandFurtado" class="texto-branco">Sandy Furtado <i
+                                class="fa fa-github"></i></a>
+
+                    </h4>
+
+                </div>
+            </div>
+
+        </section>
+
+        <main>
+            <script>
+                function mostrar() {
+                    var x = document.getElementById('checar-classe');
+                    if (x.style.display === "none") {
+                        x.style.display = "block"
+                    } else {
+                        x.style.display = "none"
+                    }
+                }
+            </script>
+
+</body>
+
+</html>
